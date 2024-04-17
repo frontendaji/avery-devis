@@ -1,0 +1,319 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+:root{
+    --primary-color:#EFE9E4;
+    --secondary-color:#5E5343;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+header{
+    width: 100%; 
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+
+nav > ul{
+    display: none;
+}
+
+.logo {
+    z-index: 2;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    z-index: 2;
+}
+
+.menu span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1px;
+    background-color: var(--secondary-color);
+}
+
+.nav-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    transition: left 0.4s ease-in-out;
+    z-index: 1;
+    background-color: var(--primary-color);
+    font-weight: 400;
+}
+
+.nav-mobile ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.nav-active{
+    left: 0;
+}
+
+main{
+    width: 100%;
+    padding: 1rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 0 0 0;
+    gap: 2rem;
+}
+
+.hero-text h1{
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.hero-text h2{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.hero-text p{
+    font-size: 1em;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.hero-img img{
+    width: 100%;
+}
+
+section{
+    padding: 0 0 4rem 0;
+}
+
+.about-img img{
+    width: 100%;
+}
+
+.about-img img:nth-of-type(2){
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.about-text h2{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-text p{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.background-img img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.background-text h2{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.background-text ul{
+    margin-left: 2rem;
+    font-size: 1em;
+}
+
+.background-text ul li{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.portfolio-text h2{
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.portfolio-img{
+    padding: 0 1rem;
+}
+
+.portfolio-img img{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-img > div{
+    margin-top: 3rem;
+}
+
+.mobile{
+    margin-top: 3rem;
+}
+
+.mobile-img img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.mobile-text p{
+    font-weight: 400;
+
+}
+
+.social-media{
+    margin-top: 3rem;
+}
+
+.socialmedia-img img{
+    width: 100%;
+    padding: 0 5rem;
+    margin-bottom: 3rem;
+}
+
+.socialmedia-text h2{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.socialmedia-text p{
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.sm-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.sm-img img{
+    width: 50%;
+}
+
+.quotes{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.quotes img{
+    width: 100%;
+}
+
+.quotes > .text{
+    width: 70%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #ffffff;
+    font-weight: 100;
+
+}
+
+.poster{
+    margin-top: 3rem;
+}
+
+.poster-text h2{
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.poster-text p{
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 2rem;
+}
+
+.poster-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.poster-img img:nth-of-type(1), .poster-img img:nth-of-type(2){
+    width: 70%;
+} 
+
+.poster-img img:nth-of-type(3){
+    width: 90%;
+}
+
+.contact{
+    margin-top: 3rem;
+}
+
+.contact-img img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contact-text h2{
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-text > div{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8em;
+    font-family: 'Roboto';
+}
+
